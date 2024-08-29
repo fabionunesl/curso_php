@@ -1,7 +1,5 @@
 <?php
-
-include_once "backend.php";
-
+    include_once "backend.php";
 ?>
 
 <h1>Seja bem-vindo ao nosso site</h1>
