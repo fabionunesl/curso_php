@@ -2,7 +2,7 @@
 
   class Car {
 
-    public $rodas;
+    public $rodas = 4;
     public $aro = 20;
     public $cor = "Vermelha";
 
@@ -18,8 +18,12 @@
 
   echo $ferrari->aro . "<br>";
   echo $ferrari->rodas . "<br>";
+  echo $ferrari->cor . "<br>";
 
   $ferrari->cor = "Azul";
+  $ferrari->aro = 17;
+
+  echo $ferrari->aro . "<br>";
 
   echo $ferrari->cor;
 
