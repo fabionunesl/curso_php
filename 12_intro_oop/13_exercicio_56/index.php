@@ -28,9 +28,9 @@
 
   $joao = new Professor;
 
-  echo "$joao->pernas <br>";
+  echo "$joao->pernas <br>"; //propriedade
   echo "$joao->disciplina <br>";
 
-  $joao->falar();
+  $joao->falar(); //método
 
   $joao->estaLecionando();
