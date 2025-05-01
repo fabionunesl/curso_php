@@ -1,34 +1,31 @@
 <?php
 
-  trait Objeto {
+trait Objeto {
 
-    public function teste() {
-      echo "Testando trait de objeto <br>";
-    }
-
+  public function teste () {
+    echo "Testendo trait de objeto <br>";
+    echo "trait objeto <br> <br>";
   }
 
-  trait Testando {
+}
 
-    public $y = 10;
+trait Fabio {
 
-    public function traitTeste() {
-      echo "Este método é da trait Testando <br>";
-    }
-
+  public function fabio() {
+    echo "Esta trait é da trait Fábio";
   }
 
-  class Central {
+}
 
-    use Objeto;
-    use Testando;
+class Central {
 
-  }
+  use Objeto;
+  use Fabio;
 
-  $x = new Central;
+}
 
-  $x->teste();
+$x = new Central;
+$fabio = new Central;
 
-  $x->traitTeste();
-
-  echo $x->y . "<br>";
+$fabio->teste();
+$fabio->fabio();
