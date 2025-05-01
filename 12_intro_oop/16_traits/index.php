@@ -12,7 +12,7 @@ trait Objeto {
 trait Fabio {
 
   public function fabio() {
-    echo "Esta trait é da trait Fábio";
+    echo "Esta trait é da trait Fábio <br><br>  ";
   }
 
 }
@@ -21,11 +21,25 @@ class Central {
 
   use Objeto;
   use Fabio;
+  use Carol;
 
 }
 
-$x = new Central;
-$fabio = new Central;
+trait Carol {
 
-$fabio->teste();
-$fabio->fabio();
+  public $y = 10;
+
+  public function carol() {
+    echo "Carol é muito linda <br><br>";
+  }
+}
+
+
+$x = new Central;
+$t = new Central;
+
+$x->teste();
+$x->fabio();
+$x->carol();
+
+echo $t->y . "<br>";
