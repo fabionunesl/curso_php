@@ -35,4 +35,3 @@ if($dataA == $dataD) {
 } else {
     echo "As datas são diferentes <br>";
 }
-
