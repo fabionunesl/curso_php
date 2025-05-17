@@ -31,6 +31,9 @@ if(isset($_POST['ingredientes'])) {
             <div>
                 <input type="submit" value="Enviar">
             </div>
+            <div>
+                <input type="file" name="">
+            </div>
         </div>
     </form>
 </body>
