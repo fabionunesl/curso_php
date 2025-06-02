@@ -7,14 +7,14 @@ $db = "cursophp";
 $conn = new mysqli($host, $user, $pass, $db);
 
 // CONTEUDO AULA
-$id = 6;
+$id = 8;
 
 $stmt = $conn->prepare("SELECT * FROM itens WHERE id = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
 
 $resultado = $stmt->get_result();
-$item = $resultado->fetch_row();
+$item = $resultado->fetch_row(); //para pegar somente uma linha
 
 echo "<pre>";
 print_r($item);
