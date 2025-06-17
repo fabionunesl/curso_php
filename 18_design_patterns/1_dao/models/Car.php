@@ -37,7 +37,7 @@
 
         public function setKm($km)
         {
-            $this->km = $km;
+            $this->km = intval($km);
         }
 
         //MÉTODO PARACOLOR
@@ -50,4 +50,11 @@
         {
             $this->color = $color;
         }
+    }
+
+    interface CarDAOInterface
+    {
+
+        public function create(Car $car);
+        public function findAll();
     }
